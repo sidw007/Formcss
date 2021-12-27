@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teste form</title>
+
+    <!-- Chamar arquivo CSS-->
+  </head>
+  <body>
+    <div class="caixa"></div>
+    <div>
+      <h1 id="titform">Inscrição</h1>
+      <p id="subititform">Faça seu cadastro</p>
+      <link rel="stylesheet" type="text/css" href="estilo.css" />
+      <br />
+    </div>
+
+    <form>
+      <fieldset class="registro" method="POST" action="./email.php">
+        <div class="campo">
+          <label for="nome">Nome:</label>
+          <input type="text" nome="nome" id="nome" required />
+        </div>
+        <div class="campo">
+          <label for="email">Email:</label>
+          <input type="mail" nome="email" id="email" required />
+        </div>
+        <div class="campo">
+          <label for="estado">Estado:</label>
+          <select id="estado" name="uf">
+            <option selected disabled value="">Selecione</option>
+            <option>Santa Catarina</option>
+            <option>Paraná</option>
+            <option>Rio Grande do Sul</option>
+          </select>
+        </div>
+
+        <button type="submit" class="botao">Enviar</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
